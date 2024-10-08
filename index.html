@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera - Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="auth-container">
+            <h1>Juego Piedra, Papel y Tijera</h1>
+            <div id="register-form">
+                <h2>Registrarse</h2>
+                <input type="text" id="register-username" placeholder="Nombre de usuario" required />
+                <input type="password" id="register-password" placeholder="Contraseña" required />
+                <button id="register-btn">Registrarse</button>
+                <p>¿Ya tienes una cuenta? <a href="#" id="show-login">Inicia sesion</a></p>
+            </div>
+
+            <div id="login-form" style="display: none;">
+                <h2>Iniciar sesión</h2>
+                <input type="text" id="login-username" placeholder="Nombre de usuario" required />
+                <input type="password" id="login-password" placeholder="Contraseña" required />
+                <button id="login-btn">Iniciar sesion</button>
+                <p>¿No tienes una cuenta? <a href="#" id="show-register">Registrate</a></p>
+            </div>
+        </div>
+
+        <div id="game-container" style="display: none;">
+            <h1>Piedra, Papel o Tijera</h1>
+            <div class="choices">
+                <button class="choice" data-choice="piedra">🪨</button>
+                <button class="choice" data-choice="papel">📄</button>
+                <button class="choice" data-choice="tijera">✂️</button>
+            </div>
+            <div class="result">
+                <h2 id="result-text"></h2>
+                <p id="user-choice"></p>
+                <p id="computer-choice"></p>
+            </div>
+            <button id="logout-btn">Cerrar sesion</button>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+
+</html>
