@@ -1,6 +1,9 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url(fondo.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
     text-align: center;
     padding: 50px;
     height: 100vh;
@@ -10,7 +13,7 @@ body {
 }
 
 .container {
-    background-image: url(fondo2.jpeg);
+    background-image: url(container.webp);
     padding: 30px;
     width: 400px;
     /* Ajusta el tamaño del container */
@@ -25,7 +28,7 @@ h1 {
 
 input {
     display: block;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgb(246, 248, 248);
     height: 40px;
     line-height: 40px;
     border-radius: 20px;
